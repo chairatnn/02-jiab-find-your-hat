@@ -173,6 +173,27 @@
 
   <h3>2.2. Board Functions (Generated)</h3>
 
+░ O O ░ ░ ░ ░ O ░ ░
+O O ░ O O ░ ░ ░ ░ ░
+░ ░ ░ ░ O ░ ░ O ░ ░
+░ O O ░ ░ ░ O O ░ ░
+░ ░ O ░ O ░ O ░ * O
+░ O ░ ░ ░ O ░ ^ ░ ░
+░ ░ ░ ░ ░ ░ ░ O ░ ░
+O ░ O O ░ ░ ░ ░ ░ ░
+O ░ O ░ O ░ ░ ░ O O
+░ ░ ░ ░ ░ O O ░ O ░
+Which way? (w/a/s/d): 
+
+  - How the board is represented (2D array).
+    - ใช้ function printBoard เหมือนเดิม
+
+  - Tile types (PLAYER, EMPTY, HOLE, HAT).
+    - สร้างกระดานแบบสุ่มตามขนาด เปอร์เซ็นต์หลุมที่กำหนด กำหนดตำแหน่งเริ่มต้นของผู้เล่นและหมวก โดยใช้ function generateBoard
+
+  - How random placement avoids overlaps. 
+    - สร้างพื้นที่หลักและสุ่มวาง HOLE, สุ่มวาง HAT - ต้องไม่ทับ HOLE, กำหนดตำแหน่งเริ่มต้นของผู้เล่นแบบสุ่ม ต้องไม่ทับ HOLE หรือ HAT, รวจสอบให้มั่นใจว่าตำแหน่งเริ่มต้นของผู้เล่นเป็นช่องว่าง EMPTY เท่านั้น
+
 
 <h2>3. Input Functions</h2>
 
